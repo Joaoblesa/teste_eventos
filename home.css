@@ -1,7 +1,5 @@
-/* Importação de fonte (opcional, mas ajuda a replicar o visual) */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-/* Reset e Configurações Gerais */
 * {
     margin: 0;
     padding: 0;
@@ -10,55 +8,50 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f2f5; /* Fundo muito claro */
+    background-color: #f0f2f5; 
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Wrapper Principal (Para centralizar o card) */
-.main-wrapper {
+.envolvedor-principal {
     width: 100%;
-    max-width: 900px; /* Define o tamanho máximo do card inteiro */
+    max-width: 900px; 
     padding: 20px;
 }
 
-/* Card Principal (Container Flex) */
-.login-card {
+.cartao-login {
     display: flex;
     background-color: white;
-    border-radius: 15px; /* Arredondamento principal do card */
-    overflow: hidden; /* Garante que o conteúdo azul também tenha a borda arredondada */
+    border-radius: 15px; 
+    overflow: hidden; 
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* ------------------- */
-/* Coluna da Esquerda (Formulário) */
-/* ------------------- */
-.login-form-area {
-    flex: 1.5; /* Ocupa um pouco mais de espaço que a direita */
+.area-formulario-login {
+    flex: 1.5; 
     padding: 60px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.welcome-title {
+.titulo-boas-vindas {
     font-size: 28px;
     font-weight: 500;
     color: #333;
     margin-bottom: 40px;
 }
 
-.login-form {
+.formulario-login {
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 350px;
 }
 
-.input-label {
+.rotulo-input {
     font-size: 14px;
     color: #555;
     font-weight: 400;
@@ -66,63 +59,61 @@ body {
     margin-bottom: 5px;
 }
 
-.text-input-field {
+.campo-texto-input {
     width: 100%;
     padding: 10px 15px;
     border: 1px solid #ddd;
-    border-radius: 8px; /* Bordas arredondadas do input */
+    border-radius: 8px; 
     font-size: 16px;
     outline: none;
     transition: border-color 0.2s;
 }
 
-.text-input-field:focus {
-    border-color: #007bff;
-}
-
-/* Botão Entrar */
-.enter-button {
+.botao-entrar {
     margin-top: 30px;
-    padding: 12px;
-    background: linear-gradient(to bottom, #1091e4, #007bff); /* Gradiente azul do botão */
-    color: white;
-    font-size: 16px;
-    font-weight: 700;
+    padding: 0; 
     border: none;
-    border-radius: 8px; /* Bordas arredondadas do botão */
+    border-radius: 30px; 
+    background: linear-gradient(to bottom, #1091e4, #007bff); 
     cursor: pointer;
     box-shadow: 0 3px 8px rgba(0, 123, 255, 0.3);
-    transition: background 0.2s;
+    transition: background 0.2s, box-shadow 0.2s;
 }
 
-.enter-button:hover {
-    background: linear-gradient(to bottom, #007bff, #1091e4);
+.botao-entrar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
-/* Link de Cadastro */
-.signup-link {
+.botao-entrar:hover {
+    box-shadow: 0 5px 12px rgba(0, 123, 255, 0.5);
+}
+
+.link-cadastro {
     font-size: 14px;
     color: #666;
     margin-top: 20px;
 }
 
-.register-link-text {
-    color: #007bff; /* Cor do link */
+.texto-link-cadastro {
+    color: #007bff; 
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.2s;
 }
 
-.register-link-text:hover {
+.texto-link-cadastro:hover {
     text-decoration: underline;
 }
 
-/* ------------------- */
-/* Coluna da Direita (Branding) */
-/* ------------------- */
-.branding-area {
-    flex: 1; /* Ocupa a parte menor do card */
-    background-color: #007bff; /* Azul sólido */
+/* area azul */
+
+.area-marca {
+    flex: 1; 
+    background-color: #007bff; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,14 +121,14 @@ body {
     padding: 20px;
 }
 
-.brand-logo-container {
+.container-logo-marca {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.brand-logo-circle {
-    background-color: #4a5d96; /* Azul escuro/roxo dentro do círculo */
+.circulo-logo-marca {
+    background-color: #4a5d96; 
     color: white;
     width: 80px;
     height: 80px;
@@ -150,7 +141,7 @@ body {
     margin-bottom: 15px;
 }
 
-.brand-name {
+.nome-marca {
     font-size: 24px;
     color: white;
     font-weight: 500;

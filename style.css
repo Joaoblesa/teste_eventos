@@ -1,7 +1,5 @@
-/* Importação de fonte (opcional, mas ajuda a replicar o visual) */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-/* Estilos Globais e Reset */
 * {
     margin: 0;
     padding: 0;
@@ -10,47 +8,43 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f2f5; /* Cor de fundo idêntica à imagem original */
+    background-color: #f0f2f5; 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* Header/Logo */
-.header {
+.cabecalho {
     width: 100%;
     padding: 15px 40px; 
     background-color: transparent;
 }
 
-.header-logo {
+.cabecalho-logo {
     display: flex;
     align-items: center;
 }
 
-.logo-circle {
-    background-color: #4a90e2; /* Azul específico */
-    color: white;
+.logo-circulo-imagem {
     width: 28px; 
     height: 28px; 
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 700;
+    
+    background-image: url('./img/Logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
     margin-right: 6px;
-    padding-top: 2px;
 }
 
-.logo-text {
+.logo-texto {
     font-size: 16px;
     color: #444; 
     font-weight: 500;
 }
 
-/* Container Principal para Centralização */
-.main-content {
+.conteudo-principal {
     flex-grow: 1;
     display: flex;
     justify-content: center;
@@ -58,56 +52,51 @@ body {
     padding: 20px;
 }
 
-/* Card de Cadastro (O retangular arredondado) */
-.registration-card {
+.cartao-cadastro {
     width: 100%;
     max-width: 550px; 
     background-color: white;
-    border-radius: 20px; /* Bordas arredondadas do card */
+    border-radius: 20px; 
     padding: 40px;
-    /* Sombra suave do card */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); 
     text-align: center;
 }
 
-/* Título Principal */
-.card-title {
+.titulo-cartao {
     font-size: 26px; 
     font-weight: 500; 
     color: #333;
     margin-bottom: 30px;
 }
 
-.form-container {
+.container-formulario {
     text-align: left;
 }
 
-/* Título de Seção (Dados Pessoais) */
-.form-section-title {
+.titulo-secao-formulario {
     font-size: 18px;
     font-weight: 500;
     color: #333;
     margin-bottom: 15px;
 }
 
-/* Formulário e Campos */
-.registration-form {
+.formulario-cadastro {
     display: flex;
     flex-direction: column;
 }
 
-.input-label {
+.rotulo-input {
     font-size: 14px;
-    color: #555; /* Cor do texto do label */
+    color: #555; 
     font-weight: 400;
     margin-top: 15px; 
     margin-bottom: 5px; 
 }
 
-.text-input-field {
+.campo-texto-input {
     width: 100%;
     padding: 10px 12px;
-    border: 1px solid #e0e0e0; /* Borda bem clara e fina */
+    border: 1px solid #e0e0e0; 
     border-radius: 6px; 
     font-size: 16px;
     color: #333;
@@ -116,21 +105,17 @@ body {
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05); 
 }
 
-
-.text-input-field:nth-last-of-type(1) {
+.campo-texto-input:nth-last-of-type(1) {
     margin-bottom: 30px; 
 }
 
-
-/* Botão Cadastrar-se */
-.submit-button {
-    /* Gradiente azul para o botão */
-    background: linear-gradient(to bottom, #1091e4 0%, #007bff 100%); 
+.botao-enviar {
+    background: linear-gradient(to bottom, #009DDD 0%, #009DDD 100%); 
     color: white;
     font-size: 16px;
     font-weight: 600;
     border: none;
-    padding: 12px 30px; 
+    padding: 0; 
     width: 50%; 
     align-self: center;
     border-radius: 30px; 
@@ -139,6 +124,13 @@ body {
     transition: background 0.2s, box-shadow 0.2s;
 }
 
-.submit-button:hover {
+.botao-enviar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 12px 30px; 
+}
+
+.botao-enviar:hover {
     box-shadow: 0 6px 15px rgba(0, 123, 255, 0.6);
 }
